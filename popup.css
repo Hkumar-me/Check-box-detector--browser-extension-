@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100%;
+    background-color: black;
+    color: aliceblue;
+}
+
+.margin
+{
+    margin: 25px;
+}
+
+.popup-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-container .heading h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: aquamarine;
+    font-weight: 800;
+    text-align: center;
+}
+
+.popup-container .heading p{
+    font-style: italic;
+}

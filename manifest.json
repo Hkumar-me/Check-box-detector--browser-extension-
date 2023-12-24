@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Checkbox Detector",
+  "version": "1.0",
+  "description": "Detect and manage prechecked checkboxes on e-commerce websites.",
+  "icons": {
+    "48": "icon.png"
+  },
+  "action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Click to activate the extension"
+  },
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["contentStyles.css","background.js","meter.js", "popup.js"],
+      "js": ["contentScript.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
