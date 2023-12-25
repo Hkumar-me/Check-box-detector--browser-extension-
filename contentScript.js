@@ -59,6 +59,9 @@
 // contentScript.js
 
 // Function to find and return the labels of prechecked checkboxes
+
+
+
 function findPrecheckedCheckboxes() {
   const precheckedCheckboxes = [];
   const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
@@ -102,3 +105,8 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
 
 // Perform any other actions or logic related to detecting prechecked checkboxes on the page
 // ...
+
+// export const updates = "some value";
+// export const variable1 = "Value 1";
+// export const variable2 = "Value 2";
+// export const variable3 = "Value 3";
