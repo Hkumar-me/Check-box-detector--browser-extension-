@@ -22,11 +22,8 @@
     {
       "matches": ["<all_urls>"],
       "css": ["contentStyles.css"],
-      "js": ["contentScript.js","popup.js"]
+      "js": ["contentScript.js","popup1.js","meter.js"]
     }
   ],
-  "type": "module",
-  "scripts": {
-    "start": "node script.js"
-}
+  "type": "module"
 }

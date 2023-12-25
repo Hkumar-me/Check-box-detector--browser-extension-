@@ -1,34 +1,105 @@
-*{
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    width: 100vw;
-    height: 100%;
-    background-color: black;
-    color: aliceblue;
-}
-
-.margin
-{
-    margin: 25px;
-}
-
-.popup-container{
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.85rem;
     display: flex;
     flex-direction: column;
+    color: #f5f6f7;
+    margin: 30px 0;
+    width: 500px;
+	height: 95vh;
+}
+.popup {
+    height: 550px;
+    /* width: 500px; */
+    background-color: #1b1b32;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 73px;
+    background-color: #0a0a23;
+
+}
+.logo {
+    background-image: url("popup_logo.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin: 9px 3px 2px 3px;
+}
+h1{
+    padding: 1px 0 0 4px;
+    font-size: 1.3rem;
+    margin-top: 3px;
+}
+.nav_p {
+    margin: 0;
+    padding-left: 4px;
+    font-size: 0.83rem;
+    margin-bottom: 1px;
+}
+.detection {
+    height: 250px;
+    width: 100%;
+}
+.name_p {
+    margin: 5px 0 10px 38px;
+    width: 80%;
+    height: 55px;
+    background-color: #0a0a23;
+    color: aliceblue;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.popup-container .heading h1{
-    font-family: 'Times New Roman', Times, serif;
-    color: aquamarine;
-    font-weight: 800;
+.detection_text {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 0;
+}
+span.frequency {
+    font-size: 1.25rem;
+    text-decoration: underline;
+    color: red;
+}
+.deception_meter {
+    position: absolute;
+    top: 45%;
+    left: 19.5%;
+}
+.first {
+    margin-top: 5px;
+    font-size: 1.35rem;
+    text-decoration: underline;
+    color: rgb(113, 142, 197);
     text-align: center;
 }
-
-.popup-container .heading p{
-    font-style: italic;
+footer {
+    height: 55px;
+    width: 100%;
+    background-color: #0a0a23;
+    margin-top: 202px;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
+span.mail {
+    cursor: pointer;
+}
+
+

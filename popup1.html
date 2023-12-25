@@ -1,0 +1,104 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox Detector</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="popup-container">
+        <h1>Checkbox Detector Extension</h1>
+        <p>This extension helps you identify prechecked checkboxes on e-commerce websites.</p>
+        
+        <p id="display-alert">Prechecked checkboxes detected!</p>
+        <p>Total prechecked checkboxes found: 25</p>
+        
+        <h2>Prechecked Checkboxes:</h2>
+        <ul>
+            <li>Checkbox 1</li>
+            <li>Checkbox 2</li>
+            <li>Checkbox 3</li>
+        </ul>
+
+        <p>If you encounter any issues or have feedback, please contact us at support@example.com.</p>
+    </div>
+    <script type="module"  src="popup.js"></script>
+    <script type="module"  src="contentScript.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prechecked Checkbox Detector</title>
+    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="meter.css">
+</head>
+
+<body>
+    <div class="popup-container">
+        <div class="heading">
+            <h1>Prechecked Checkbox Detector</h1>
+            <p>This extension helps you identify prechecked checkboxes on websites.</p>
+        </div>
+
+        <!-- Display confirmation and number of prechecked checkboxes -->
+        <div class="display-box margin">
+            <p id="display-alert">Prechecked checkboxes detected!</p>
+            <p>Total prechecked checkboxes found: <span id="checkbox-count">0</span></p>
+
+            <!-- Display list of prechecked checkboxes -->
+            <h2>Prechecked Checkboxes:</h2>
+            <ul id="checkbox-list margin">
+                <!-- List items will be added dynamically using JavaScript -->
+            </ul>
+        </div>
+
+        <div class="meter">
+            <div id="gauge">
+                <div id="major-ticks">
+                    <span>Low</span>
+                    <span>Moderate</span>
+                    <span>Moderate-High</span>
+                    <span>High</span>
+                    <span>Severe</span>
+                </div>
+                <div id="minor-ticks"></div>
+                <div id="minor-ticks-bottom-mask"></div>
+                <div id="bottom-circle"></div>
+                <svg version="1.1" baseProfile="full" width="190" height="190" xmlns="http://www.w3.org/2000/svg">
+                    <linearGradient id="gradient" x1="0" x2="1" y1="0" y2="0">
+                        <stop offset="0%" stop-color="#b96e85" />
+                        <stop offset="100%" stop-color="#ae69bb" />
+                    </linearGradient>
+                    <path id="path" d="M5 95 A80 80 0 0 1 185 95" stroke="url(#gradient)" fill="none" stroke-width="10"
+                        stroke-linecap="round" stroke-dasharray="0 282.78" />
+                </svg>
+                <div id="center-circle">
+                    <span id="name">Deception Meter</span>
+                    <span id="temperature"></span>
+                    <img src="leaf.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="footer margin">
+            <p>If you encounter any issues or have feedback, please contact us at support@example.com.</p>
+        </div>
+
+    </div>
+    <script type="module" src="popup.js"></script>
+    <script type="module" src="contentScript.js"></script>
+    <script type="module" src="meter.js"></script>
+</body>
+
+</html>

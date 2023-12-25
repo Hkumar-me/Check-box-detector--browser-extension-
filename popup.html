@@ -1,104 +1,190 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkbox Detector</title>
-    <link rel="stylesheet" href="popup.css">
-</head>
-<body>
-    <div class="popup-container">
-        <h1>Checkbox Detector Extension</h1>
-        <p>This extension helps you identify prechecked checkboxes on e-commerce websites.</p>
-        
-        <p id="display-alert">Prechecked checkboxes detected!</p>
-        <p>Total prechecked checkboxes found: 25</p>
-        
-        <h2>Prechecked Checkboxes:</h2>
-        <ul>
-            <li>Checkbox 1</li>
-            <li>Checkbox 2</li>
-            <li>Checkbox 3</li>
-        </ul>
-
-        <p>If you encounter any issues or have feedback, please contact us at support@example.com.</p>
-    </div>
-    <script type="module"  src="popup.js"></script>
-    <script type="module"  src="contentScript.js"></script>
-</body>
-</html> -->
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prechecked Checkbox Detector</title>
-    <link rel="stylesheet" href="popup.css">
+    <title>popup page</title>
     <link rel="stylesheet" href="meter.css">
+    <link rel="stylesheet" href="popup.css">
 </head>
 
 <body>
-    <div class="popup-container">
-        <div class="heading">
-            <h1>Prechecked Checkbox Detector</h1>
-            <p>This extension helps you identify prechecked checkboxes on websites.</p>
-        </div>
-
-        <!-- Display confirmation and number of prechecked checkboxes -->
-        <div class="display-box margin">
-            <p id="display-alert">Prechecked checkboxes detected!</p>
-            <p>Total prechecked checkboxes found: <span id="checkbox-count">0</span></p>
-
-            <!-- Display list of prechecked checkboxes -->
-            <h2>Prechecked Checkboxes:</h2>
-            <ul id="checkbox-list margin">
-                <!-- List items will be added dynamically using JavaScript -->
-            </ul>
-        </div>
-
-        <div class="meter">
-            <div id="gauge">
-                <div id="major-ticks">
-                    <span>Low</span>
-                    <span>Moderate</span>
-                    <span>Moderate-High</span>
-                    <span>High</span>
-                    <span>Severe</span>
-                </div>
-                <div id="minor-ticks"></div>
-                <div id="minor-ticks-bottom-mask"></div>
-                <div id="bottom-circle"></div>
-                <svg version="1.1" baseProfile="full" width="190" height="190" xmlns="http://www.w3.org/2000/svg">
-                    <linearGradient id="gradient" x1="0" x2="1" y1="0" y2="0">
-                        <stop offset="0%" stop-color="#b96e85" />
-                        <stop offset="100%" stop-color="#ae69bb" />
-                    </linearGradient>
-                    <path id="path" d="M5 95 A80 80 0 0 1 185 95" stroke="url(#gradient)" fill="none" stroke-width="10"
-                        stroke-linecap="round" stroke-dasharray="0 282.78" />
-                </svg>
-                <div id="center-circle">
-                    <span id="name">Deception Meter</span>
-                    <span id="temperature"></span>
-                    <img src="leaf.svg" alt="">
+    <div class="popup">
+        <header>
+            <div class="navbar">
+                <div class="logo"></div>
+                <div class="text">
+                    <h1>Dark Pattern Detector</h1>
+                    <p class="nav_p">Unmasking Deception, Empowering transparency!</p>
                 </div>
             </div>
-        </div>
+        </header>
+        <main>
+            <div class="detection">
+                <p class="first">Tracking Deceptive Tactics</p>
+                <div class="name_p">
+                    <p id="nameOfDarkPattern" class="nameDP"></p>
+                </div>
+                <p class="detection_text">This Dark Pattern - Found <span class="frequency"
+                        id="frequency">____</span> Times.</p>
+                        <p id="patternInfo"></p>
+                        <p id="temperature"></p>
+            </div>
+            <div class="deception_meter">
+                <div id="gauge">
+                    <div id="major-ticks">
+                        <span>Low</span>
+                        <span>Moderate</span>
+                        <span>Moderate-High</span>
+                        <span>High</span>
+                        <span>Severe</span>
+                    </div>
+                    <div id="minor-ticks">
+                        <span title="--i:1"></span>
+                        <span title="--i:2"></span>
+                        <span title="--i:3"></span>
+                        <span title="--i:4"></span>
+                        <span title="--i:5"></span>
+                        <span title="--i:6"></span>
+                        <span title="--i:7"></span>
+                        <span title="--i:8"></span>
+                        <span title="--i:9"></span>
+                        <span title="--i:10"></span>
+                        <span title="--i:11"></span>
+                        <span title="--i:12"></span>
+                        <span title="--i:13"></span>
+                        <span title="--i:14"></span>
+                        <span title="--i:15"></span>
+                        <span title="--i:16"></span>
+                        <span title="--i:17"></span>
+                        <span title="--i:18"></span>
+                        <span title="--i:19"></span>
+                        <span title="--i:20"></span>
+                        <span title="--i:21"></span>
+                        <span title="--i:22"></span>
+                        <span title="--i:23"></span>
+                        <span title="--i:24"></span>
+                        <span title="--i:25"></span>
+                        <span title="--i:26"></span>
+                        <span title="--i:27"></span>
+                        <span title="--i:28"></span>
+                        <span title="--i:29"></span>
+                        <span title="--i:30"></span>
+                        <span title="--i:31"></span>
+                        <span title="--i:32"></span>
+                        <span title="--i:33"></span>
+                        <span title="--i:34"></span>
+                        <span title="--i:35"></span>
+                        <span title="--i:36"></span>
+                        <span title="--i:37"></span>
+                        <span title="--i:38"></span>
+                        <span title="--i:39"></span>
+                        <span title="--i:40"></span>
+                        <span title="--i:41"></span>
+                        <span title="--i:42"></span>
+                        <span title="--i:43"></span>
+                        <span title="--i:44"></span>
+                        <span title="--i:45"></span>
+                        <span title="--i:46"></span>
+                        <span title="--i:47"></span>
+                        <span title="--i:48"></span>
+                        <span title="--i:49"></span>
+                        <span title="--i:50"></span>
+                        <span title="--i:51"></span>
+                        <span title="--i:52"></span>
+                        <span title="--i:53"></span>
+                        <span title="--i:54"></span>
+                        <span title="--i:55"></span>
+                        <span title="--i:56"></span>
+                        <span title="--i:57"></span>
+                        <span title="--i:58"></span>
+                        <span title="--i:59"></span>
+                        <span title="--i:60"></span>
+                        <span title="--i:61"></span>
+                        <span title="--i:62"></span>
+                        <span title="--i:63"></span>
+                        <span title="--i:64"></span>
+                        <span title="--i:65"></span>
+                        <span title="--i:66"></span>
+                        <span title="--i:67"></span>
+                        <span title="--i:68"></span>
+                        <span title="--i:69"></span>
+                        <span title="--i:70"></span>
+                        <span title="--i:71"></span>
+                        <span title="--i:72"></span>
+                        <span title="--i:73"></span>
+                        <span title="--i:74"></span>
+                        <span title="--i:75"></span>
+                        <span title="--i:76"></span>
+                        <span title="--i:77"></span>
+                        <span title="--i:78"></span>
+                        <span title="--i:79"></span>
+                        <span title="--i:80"></span>
+                        <span title="--i:81"></span>
+                        <span title="--i:82"></span>
+                        <span title="--i:83"></span>
+                        <span title="--i:84"></span>
+                        <span title="--i:85"></span>
+                        <span title="--i:86"></span>
+                        <span title="--i:87"></span>
+                        <span title="--i:88"></span>
+                        <span title="--i:89"></span>
+                        <span title="--i:90"></span>
+                        <span title="--i:91"></span>
+                        <span title="--i:92"></span>
+                        <span title="--i:93"></span>
+                        <span title="--i:94"></span>
+                        <span title="--i:95"></span>
+                        <span title="--i:96"></span>
+                        <span title="--i:97"></span>
+                        <span title="--i:98"></span>
+                        <span title="--i:99"></span>
+                        <span title="--i:100"></span>
+                    </div>
+                    <div id="bottom-circle"></div>
+                    <svg version="1.1" baseProfile="full" width="190" height="190" xmlns="http://www.w3.org/2000/svg">
+                        <linearGradient id="gradient" x1="0" x2="1" y1="0" y2="0">
+                            <stop offset="0%" stop-color="#7FFF7F" />
+                            <stop offset="25%" stop-color="#FFFF00" />
+                            <stop offset="50%" stop-color="#FFA500" />
+                            <stop offset="75%" stop-color="#FF0000" />
+                            <stop offset="100%" stop-color="#8B0000" />
+                        </linearGradient>
+                        <path d="M14 97 A77 77 0 0 1 177 97" stroke="url(#gradient)" fill="none" stroke-width="13"
+                             id ="path" stroke-linecap="round" stroke-dasharray="0 301.49" />
+                    </svg>
+                    <div id="center-circle">
+                        <span id="name">Deception Meter</span>
+                        <span id="decpetion_level"></span>
+                        <img src="leaf.svg" alt="">
+                    </div>
 
-        <div class="footer margin">
-            <p>If you encounter any issues or have feedback, please contact us at support@example.com.</p>
-        </div>
+                    <div id="center-circle">
+                        <span id="name">Deception Meter</span>
+                        <span id="decpetion_level">67</span>
+                        <img src="leaf.svg" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        <footer>
+            <div class="cpr_email">
+                <p>Copyright &copy 2023</p>
+                <p>Reach us at <br><span class="mail">team_techno@example.com</span></p>
+            </div>
+            <div class="terms_nextPage">
+                <p><a href="#">Terms of Service.</a></p>
+                <p>For more information <br><a href="#">Visit here</a></p>
+            </div>
+        </footer>
 
     </div>
-    <script type="module" src="popup.js"></script>
-    <script type="module" src="contentScript.js"></script>
-    <script type="module" src="meter.js"></script>
+<script type="module" src="popup1.js"></script>
+<script type="module" src="meter.js"></script>
+<script type="module" src="contentScript.js"></script>
 </body>
 
 </html>
