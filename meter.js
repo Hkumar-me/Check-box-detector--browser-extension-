@@ -85,6 +85,7 @@ console.log(darkPatterns.hasOwnProperty(window.popupValues.updatedKey))
 
     if (darkPatterns.hasOwnProperty(patternID)) {
         const { level, sentence } = darkPatterns[patternID];
+        console.log(level)
         // temperature.textContent = level;
         // patternInfo.innerHTML = `<strong>${patternID.replace(/([A-Z])/g, ' $1').trim()} Detected:</strong> ${sentence}`;
         updateArcLength(darkPatterns[window.popupValues.updatedKey].level);

@@ -60,7 +60,7 @@
 
 // Function to find and return the labels of prechecked checkboxes
 
-
+console.log("hello")
 
 function findPrecheckedCheckboxes() {
   const precheckedCheckboxes = [];
@@ -71,10 +71,11 @@ function findPrecheckedCheckboxes() {
     const labelElement = findLabelForCheckbox(checkbox);
     if (labelElement) {
       precheckedCheckboxes.push(labelElement.innerText.trim());
+
       // precheckedCheckboxes.push(labelElement.innerHTML.trim());
     }
   });
-  // console.log(precheckedCheckboxes)
+  console.log(precheckedCheckboxes)
   return precheckedCheckboxes;
 }
 
